@@ -9,26 +9,17 @@ Console.WriteLine(" Please , introduce three-digit number 'XXX' ");
 int number , a ;
 number = int.Parse(Console.ReadLine());
 
-if ( number >= 100 ) 
+
+if ( number >= 100 && number < 1000 ) 
 {
-     if  (number < 1000) 
-     {
-        a = (number % 100) / 10 ;
-        Console.Write( number);
-        Console.Write(" --> ");
-        Console.WriteLine( a ) ;
-     }
-     else
-     {
-        Console.Write(" the introduced number was : ");
-        Console.WriteLine( number );
-     }
+   a = (number % 100) / 10 ;
+   Console.Write( number);
+   Console.Write(" --> ");
+   Console.WriteLine( a ) ;
 }
 else
 {
-    Console.Write(" the introduced number was : ");
-    Console.WriteLine( number );
+   Console.Write(" the introduced number was : ");
+   Console.WriteLine( number );
 }
-
-
 
