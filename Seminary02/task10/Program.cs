@@ -9,7 +9,6 @@ Console.WriteLine(" Please , introduce three-digit number 'XXX' ");
 int number , a ;
 number = int.Parse(Console.ReadLine());
 
-
 if ( number >= 100 && number < 1000 ) 
 {
    a = (number % 100) / 10 ;
