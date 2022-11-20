@@ -12,17 +12,17 @@ if (number < 100) Console.WriteLine(" Do not have the 3 digit ");
     else if ((number >= 100) && (number < 1000))
     {
         a = number % 10;
-        Console.WriteLine(a);
+        Console.WriteLine($" {number} --> {a} ");
     }
     else if ((number >= 1000) && (number < 10000))
     {
         a = (number % 100) / 10;
-        Console.WriteLine(a);
+        Console.WriteLine($" {number} --> {a} ");
     }
     else if ((number >= 10000) && (number < 100000))
     {
         a = (number % 1000) / 100;
-        Console.WriteLine(a);
+        Console.WriteLine($" {number} --> {a} ");
     }
 else
 {
