@@ -5,7 +5,7 @@
 // 32679 -> 6
 
 Console.WriteLine(" Please , introduce a number  ");
-int number, a, b;
+int number, a ;
 number = int.Parse(Console.ReadLine());
 
 if (number < 100) Console.WriteLine(" Do not have the 3 digit ");
