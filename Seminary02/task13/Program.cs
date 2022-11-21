@@ -5,28 +5,22 @@
 // 32679 -> 6
 
 Console.WriteLine(" Please , introduce a number  ");
-int number, a ;
-number = int.Parse(Console.ReadLine());
+int number, a, b;
+number = Convert.ToInt32(Console.ReadLine());
 
 if (number < 100) Console.WriteLine(" Do not have the 3 digit ");
-    else if ((number >= 100) && (number < 1000))
-    {
-        a = number % 10;
-        Console.WriteLine($" {number} --> {a} ");
-    }
-    else if ((number >= 1000) && (number < 10000))
-    {
-        a = (number % 100) / 10;
-        Console.WriteLine($" {number} --> {a} ");
-    }
-    else if ((number >= 10000) && (number < 100000))
-    {
-        a = (number % 1000) / 100;
-        Console.WriteLine($" {number} --> {a} ");
-    }
+else if ((number >= 100) && (number < 1000))
+{
+    a = number % 10;
+    Console.WriteLine($" {number} --> {a} ");
+}
 else
 {
-    Console.WriteLine(" Please , try another number  ");
-}    
-
-
+    b = number;
+    while (number >= 1000) 
+    {
+        number = number / 10; 
+    }
+    a = number % 10;
+    Console.WriteLine($" {b} --> {a} ");
+}
