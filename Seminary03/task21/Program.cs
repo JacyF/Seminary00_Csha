@@ -26,8 +26,3 @@ x = x1 - x2; y = y1 - y2; z = z1 - z2;
 result = Math.Sqrt((Math.Pow(x, 2)) + (Math.Pow(y, 2)) + (Math.Pow(z, 2)));
 Console.WriteLine($"Point A ({x1}, {y1}, {z1}) ; Point B ({x2}, {y2} , {z2}) --> {result} ");
 
-
-
-
-
-
